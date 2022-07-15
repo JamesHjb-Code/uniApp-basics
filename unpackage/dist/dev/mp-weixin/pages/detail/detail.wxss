@@ -1,0 +1,18 @@
+
+.box {
+	width: 100px;
+	height: 100px;
+	background: aqua;
+}
+.active-box {
+	background: blue;
+}
+.box2 {
+	width: 200px;
+	height: 200px;
+	background: #d3d3d3;
+}
+.active-box2 {
+	background: green;
+}
+
