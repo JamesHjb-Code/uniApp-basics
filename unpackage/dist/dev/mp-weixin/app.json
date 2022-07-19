@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/list/list",
+    "pages/index/index",
     "pages/uni-style/uni-style",
     "pages/message/message",
-    "pages/index/index",
     "pages/concat/concat",
     "pages/detail/detail"
   ],
@@ -12,7 +13,6 @@
     "navigationBarTitleText": "上车",
     "navigationBarBackgroundColor": "#00ff00",
     "backgroundColor": "#c3c3c3",
-    "enablePullDownRefresh": true,
     "backgroundTextStyle": "light"
   },
   "tabBar": {
