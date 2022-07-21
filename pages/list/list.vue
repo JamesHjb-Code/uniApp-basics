@@ -3,6 +3,7 @@
 		<view>这是列表项</view>
 		<button type="primary" @click="setStorage">存储数据</button>
 		<button type="primary" @click="getStorage">获取数据</button>
+		<button type="primary" @click="removeStorage">移除数据</button>
 		<view v-for="item in list" class="box-item">{{item}}</view>
 		<!-- <button @click="handleRefresh()">点击下拉刷新</button> -->
 	</view>
@@ -48,6 +49,14 @@
 					key:'data',
 					success(res){
 						console.log('获取成功',res.data)
+					}
+				})
+			},
+			removeStorage(){
+				uni.removeStorage({
+					key:'data',
+					success(){
+						console.log('删除成功！')
 					}
 				})
 			}

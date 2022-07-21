@@ -1,14 +1,15 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+		<test-import></test-import>
 	</view>
 </template>
 
 <script>
+import testImport from '../../components/test.vue'
 	export default {
+		components:{
+			testImport
+		},
 		data() {
 			return {
 				title: 'Hello'

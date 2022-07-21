@@ -1,11 +1,13 @@
 {
   "pages": [
-    "pages/list/list",
     "pages/index/index",
-    "pages/uni-style/uni-style",
+    "pages/navigator/navigator",
     "pages/message/message",
+    "pages/list/list",
+    "pages/uni-style/uni-style",
     "pages/concat/concat",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "components/test"
   ],
   "subPackages": [],
   "window": {

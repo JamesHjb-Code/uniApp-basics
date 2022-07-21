@@ -1,0 +1,1 @@
+<view id="myId">{{'这是test组件'+num+''}}</view>
