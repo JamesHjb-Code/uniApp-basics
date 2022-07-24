@@ -1,13 +1,18 @@
 <template>
 	<view class="content">
 		<test-import></test-import>
+		<uni-badge text="1"></uni-badge>
+		<uni-badge text="2" type="success" @click="bindClick"></uni-badge>
+		<uni-badge text="3" type="primary" :inverted="true"></uni-badge>
+		<uni-calendar ref="calendar" :insert="false" @confirm="confirm" />
+		<button @click="open">打开日历</button>
 	</view>
 </template>
 
 <script>
-import testImport from '../../components/test.vue'
+	import testImport from '../../components/test.vue'
 	export default {
-		components:{
+		components: {
 			testImport
 		},
 		data() {
@@ -16,19 +21,24 @@ import testImport from '../../components/test.vue'
 			}
 		},
 		onLoad(options) {
-			console.log('加载完成了',options)
+			console.log('加载完成了', options)
 		},
-		onShow(){
+		onShow() {
 			console.log('页面显示了')
 		},
-		onReady(){
+		onReady() {
 			console.log('页面初次渲染完成了')
 		},
-		onHide(){
+		onHide() {
 			console.log('页面隐藏了')
 		},
 		methods: {
-
+			open() {
+				this.$refs.calendar.open();
+			},
+			confirm(e) {
+				console.log(e);
+			}
 		}
 	}
 </script>

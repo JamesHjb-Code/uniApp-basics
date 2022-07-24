@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 <view class="content"><test-import vue-id="8dd740cc-1" bind:__l="__l"></test-import></view>
+=======
+<view class="content"><test-import vue-id="8dd740cc-1" bind:__l="__l"></test-import><uni-badge vue-id="8dd740cc-2" text="1" bind:__l="__l"></uni-badge><uni-badge vue-id="8dd740cc-3" text="2" type="success" data-event-opts="{{[['^click',[['bindClick']]]]}}" bind:click="__e" bind:__l="__l"></uni-badge><uni-badge vue-id="8dd740cc-4" text="3" type="primary" inverted="{{true}}" bind:__l="__l"></uni-badge><uni-calendar class="vue-ref" vue-id="8dd740cc-5" insert="{{false}}" data-ref="calendar" data-event-opts="{{[['^confirm',[['confirm']]]]}}" bind:confirm="__e" bind:__l="__l"></uni-calendar><button data-event-opts="{{[['tap',[['open',['$event']]]]]}}" bindtap="__e">打开日历</button></view>
+>>>>>>> 28ec3b2... 引入uniapp扩展组件
